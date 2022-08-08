@@ -5,7 +5,7 @@
 //7 -> нет
 
 int a = 4;
-if (a%2 == 0)
+if (a % 2 == 0)
 {
     Console.WriteLine("да");
 }
@@ -15,7 +15,7 @@ else
 }
 
 int b = -3;
-if (b%2 == 0)
+if (b % 2 == 0)
 {
     Console.WriteLine("да");
 }
@@ -25,7 +25,7 @@ else
 }
 
 int c = 7;
-if (c%2 == 0)
+if (c % 2 == 0)
 {
     Console.WriteLine("да");
 }
