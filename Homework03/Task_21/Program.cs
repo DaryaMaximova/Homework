@@ -13,30 +13,18 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 int z2 = Convert.ToInt32(Console.ReadLine());
 
 
-double f (double A, double B, double C);
+double f(double a1, double b1, double c1, double a2, double b2, double c2)
+
 {
-    double A = (x1-x2); double B = (y1-y2); double C = (z1-z2);
-    double result = Math.Sqrt(A*A)+(B*B)+(C*C);
+    double A = (a2 - a1);
+    double B = (b2 - b1);
+    double C = (c2 - c1);
+    double result = Math.Sqrt((A * A) + (B * B) + (C * C));
     return result;
 }
 
+double length = f(x1, y1, z1, x2, y2, z2);
 
-//double f = (Math.Sqrt((y1-y2)*(y1-y2) + (x1-x2)*(x1-x2) + (z1-z2) * (z1-z2)));
-//Console.WriteLine(f);
-//f(result);
-Console.WriteLine(f);
+Console.WriteLine(length);
 
 
-//string Method4(int count, string c)
-// {
-//  int i = 0;
-// string result = String.Empty;
-// while (i < count)
-//  {
-//     result = result + c;
-//        i++;
-//  }
-//    return result;
-// }
-//string res=Method4(10, "z");
-//Console.WriteLine(res);
